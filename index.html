@@ -266,9 +266,11 @@
             <p class="subtitle">Hazama Publishing</p>
         </div>
         <div class="search">
-            <input type="text" id="searchInput" placeholder="キーワード入力">
-            <button onclick="searchSite()">検索</button>
-        </div>
+      <form action="https://hazamashobo.github.io/result/" method="get">
+        <input type="text" id="searchInput" name="q" placeholder="キーワード入力">
+        <button type="submit">検索</button>
+      </form>
+    </div>
     </header>
     <nav>
         <a href="index.html">ホーム</a>
@@ -277,7 +279,7 @@
         <a href="#">お問い合わせ</a>
     </nav>
     <div class="container">
-        <div class="employee-number">社員番号：000-00000</div>
+        <div class="employee-number">社員番号：HS0010</div>
         <div class="content">
             <div class="document-header">
                 <h2>社員個人情報管理台帳</h2>
@@ -302,7 +304,7 @@
                 <div class="section-title">基本情報</div>
                 <div class="field-group">
                     <div class="field-label">生年月日</div>
-                    <div class="field-value">平成9年（1997）11月20日</div>
+                    <div class="field-value">1998年10月28日</div>
                 </div>
                 <div class="field-group">
                     <div class="field-label">性別</div>
@@ -310,7 +312,7 @@
                 </div>
                 <div class="field-group">
                     <div class="field-label">住所</div>
-                    <div class="field-value">〒150-0001<br>東京都世田谷区北沢2丁目7-15<br>下北沢ヴィラ202</div>
+                    <div class="field-value">〒150-0001<br>東京都江東区木場5-22-7 パークハイツ木場201号室
                 </div>
             </div>
             <div class="section">
@@ -330,8 +332,8 @@
             </div>
             <div class="section">
                 <div class="section-title">学歴・職歴</div>
-                <div class="career-item">令和2年3月　東京藝術大学 美術学部油画科 卒業</div>
-                <div class="career-item">令和2年4月　狭間書房 入社、編集部所属/div>
+                <div class="career-item">2021年3月 武蔵野美術大学 視覚伝達デザイン学科 卒業</div>
+                <div class="career-item">2021年4月 狭間書房　入社/div>
                 <div class="career-item">現在に至る</div>
             </div>
             <div class="reference-note">
@@ -343,19 +345,6 @@
     <footer>
         <p>© 2025 狭間書房</p>
     </footer>
-    <script>
-        // 検索機能
-        const hiddenKeywords = [
-            {keyword: "社員名簿", url: "https://hazamashobo.github.io/meibo/"},
-            {keyword: "テスト", url: "https://www.youtube.com/watch?v=W3oN4-NVvhc"}
-        ];
-        function searchSite() {
-            const input = document.getElementById('searchInput').value.trim();
-            if(!input) return;
-            const found = hiddenKeywords.find(k=>k.keyword===input);
-            if(found) location.href = found.url;
-        }
-    </script>
 </body>
 </html>
         </div>
